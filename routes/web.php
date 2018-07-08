@@ -25,6 +25,9 @@ Route::post('/apply', 'Front\HomeController@ApplyForApplication')->name('applica
 Route::get('/euser', 'Front\HomeController@EditUser');
 Route::post('/contact_us','Front\PublicController@contact_us_mail')->name('contactus.mail');
 
+Route::get('new' , 'Front\PublicController@_new')->name('theme.view');
+Route::get('new/impact' , 'Front\PublicController@impact')->name('theme.impact');
+
 Auth::routes();
 
 
@@ -129,5 +132,7 @@ Route::prefix('admin')->group(function () {
     //Admin Mange Settings
 
     Route::get('/settings' , 'AdminPanel\SettingsController@index')->name('settings');
+    Route::post('/settings/store' , 'AdminPanel\SettingsController@store')->name('settings.store');
 });
+
 

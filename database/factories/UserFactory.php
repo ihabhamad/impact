@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
+use Illuminate\Support\Facades\Config;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,7 +57,7 @@ $factory->define(App\Application::class, function (Faker $faker) {
         'title' => $faker->word,
         'slug' => $faker->word,
         'content' => $faker->paragraph($nbSentences = 3, $variableNbSentences = true),
-        'image' => $faker->image(public_path('uploads/applications/') ,800, 600, [], []),
+        'image' => $faker->image(public_path('/uploads/applications/')  , 800 , 600 , [] , []),
     ];
 });
 $factory->define(App\Post::class, function (Faker $faker) {
@@ -65,7 +66,7 @@ $factory->define(App\Post::class, function (Faker $faker) {
         'slug' => $faker->word,
         'post_type' => $faker->randomElement($array = array ('header', 'our', 'our', 'our', 'our', 'our', 'event', 'event', 'event')),
         'content' => $faker->paragraph($nbSentences = 3, $variableNbSentences = true),
-        'image' => $faker->image(public_path('uploads/posts/') ,1000, 600, [], []),
+        'image' => $faker->image(public_path('/uploads/posts/')  , 800 , 600 , [] , [])
     ];
 });
 $factory->define(App\Extramenu::class, function (Faker $faker) {

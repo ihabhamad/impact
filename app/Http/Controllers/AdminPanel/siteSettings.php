@@ -14,6 +14,12 @@ class siteSettings extends Controller
        $this->middleware('auth:admin');
     }
 
+    public function store(Request $request) {
+
+
+    }
+
+
 
 
 }

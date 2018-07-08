@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- PAGE TITLE -->
+  <title>Glimpse - Company</title>
+
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="css/business.style.css">
+</head>
+
+<body class="gl-business-template gl-profile-template">
+
+<div id="gl-circle-loader-wrapper">
+  <div id="gl-circle-loader-center">
+    <div class="gl-circle-load">
+      <img src="images/ploading.gif" alt="Page Loader">
+    </div>
+  </div>
+</div>
+
+<!--================================
+            SIDE MENU
+=================================-->
+<!-- PAGE OVERLAY WHEN MENU ACTIVE -->
+<div class="gl-side-menu-overlay"></div>
+<!-- PAGE OVERLAY WHEN MENU ACTIVE END -->
+
+<div class="gl-side-menu-wrap">
+    <nav class="gl-side-menu">
+        <div class="gl-side-menu-widget-wrap">
+            <div class="gl-login-form-wrapper">
+                <h3>User Login</h3>
+                <p>Login to add new listing </p>
+
+                <div class="gl-login-form">
+                    <form action="#">
+                        <input type="text" name="gl-user-name" id="gl-user-input" placeholder="User Name">
+                        <input type="password" name="gl-user-password" id="gl-user-password" placeholder="Password">
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+
+                <div class="gl-social-login-opt">
+                    <a href="#" class="gl-social-login-btn gl-facebook-login">Login with Facebook</a>
+                    <a href="#" class="gl-social-login-btn gl-twitter-login">Login with Twitter</a>
+                </div>
+
+                <div class="gl-other-options">
+                    <a href="#" class="gl-forgot-pass">Forget Password ?</a>
+                    <a href="#" class="gl-signup">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <button class="gl-side-menu-close-button" id="gl-side-menu-close-button">Close Menu</button>
+</div>
+<!-- SIDE MENU END -->
+
+<!-- HEADER -->
+<header class="gl-header">
+  <!-- BOTTOM BAR/NAVIGATION -->
+  <div class="gl-header-bottombar">
+    <!-- Navigation Menu start-->
+    <nav class="navbar gl-header-main-menu" role="navigation">
+      <div class="container-fluid">
+
+        <!-- Navbar Toggle -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo-header.png" alt="GLIMPSE"></a>
+        </div>
+        <!-- Navbar Toggle End -->
+
+        <!-- navbar-collapse start-->
+        <div id="nav-menu" class="navbar-collapse gl-menu-wrapper collapse" role="navigation">
+          <ul class="nav navbar-nav gl-menus">
+              <li>
+                <a href="index.html">Home</a>
+                <ul class="gl-sub-menu">
+                    <li>
+                        <a href="../jobs/index.html">Home - Job</a>
+                    </li>
+                    <li>
+                        <a href="../real-estate/index.html">Home - Real Estate</a>
+                    </li>
+                    <li>
+                        <a href="../restaurant/index.html">Home - Restaurant</a>
+                    </li>
+                </ul>
+              </li>
+              <li>
+                <a href="listing-style-1.html">Listing</a>
+                <ul class="gl-sub-menu">
+                    <li>
+                        <a href="listing-style-2.html">Listing Style - Map Right</a>
+                    </li>
+                    <li>
+                        <a href="listing-style-3.html">Listing Style - Map Top</a>
+                    </li>
+                </ul>
+              </li>
+              <li class="active">
+                <a href="company.html">company</a>
+              </li>
+              <li>
+                <a href="about-us.html">About</a>
+              </li>
+              <li>
+                <a href="../elements/elements.html">Elements</a>
+                <ul class="gl-sub-menu">
+                    <li>
+                        <a href="../frontend-subbmission/index.html">Frontend Submission Page</a>
+                    </li>
+                </ul>
+              </li>
+              <li>
+                <a href="blog-grid.html">Blog</a>
+                <ul class="gl-sub-menu">
+                    <li>
+                        <a href="blog-default.html">Blog Default</a>
+                    </li>
+                    <li>
+                        <a href="blog-details.html">Blog Details</a>
+                    </li>
+                </ul>
+              </li>
+              <li>
+                <a href="contact-us.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+        <!-- navbar-collapse end-->
+
+        <div class="gl-extra-btns-wrapper">
+          <button class="gl-login-btn" id="gl-side-menu-btn">Login</button>
+          <button class="gl-add-post-btn">+ Post Add</button>
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navigation Menu end-->
+  </div>
+  <!-- END -->
+</header>
+<!-- HEADER END -->
+
+<!-- PAGE HEADER -->
+<section class="gl-page-header-wrapper">
+  <div class="container">
+    <div class="row">
+      <h1>Blue Sea</h1>
+      <p><i class="ion-ios-location-outline"></i>Highway Road 3, Lane 56, California, USA</p>
+      <span class="gl-item-rating"><i class="ion-ios-star"></i>4.5</span>
+
+      <div class="gl-page-head-btn-wrapper">
+            <a data-remodal-target="modal-share" class="gl-btn gl-icon-btn gl-share-btn">Share</a>
+            <a href="#" class="gl-btn gl-icon-btn"><i class="fa fa-heart-o"></i>Favourite</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- PAGE HEADER -->
+
+<!-- TAB NAV & META -->
+<section class="gl-tab-profile-meta-section">
+  <div class="container">
+    <div class="row">
+      <div class="gl-tab-nav-wrapper col-md-8 col-sm-8 col-xs-12">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
+          <li role="presentation"><a href="#similar-listing" aria-controls="similar-listing" role="tab" data-toggle="tab">Similar Listing</a></li>
+        </ul>
+      </div>
+
+      <div class="gl-profile-meta-wrapper col-md-4 col-sm-4 col-xs-12">
+        <ul>
+          <li><i class="fa fa-link"></i>domain.com</li>
+          <li><i class="fa fa-phone"></i>096 535 11</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TAB NAV & META END -->
+
+<!-- PAGE CONTETNT -->
+<section class="gl-page-content-section">
+  <div class="container">
+    <div class="row">
+      <!-- PAGE CONTENT DETAILS -->
+      <div class="gl-page-content tab-content col-md-8 col-sm-8 col-xs-12">
+
+        <!-- GALLERY TAB -->
+        <div role="tabpanel" class="tab-pane fade in active" id="overview">
+          <!-- GALLERY -->
+          <div class="gl-profile-gallery">
+            <ul class="gl-gallery">
+              <li>
+                <a href="images/gallery-img-big-1.jpg" class="gl-lightbox-img">
+                  <img src="images/gallery-img-1.jpg" alt="Profile Gallery Image" class="gl-lazy">
+                </a>
+              </li>
+              <li>
+                <a href="images/gallery-img-big-2.jpg" class="gl-lightbox-img">
+                  <img src="images/gallery-img-2.jpg" alt="Profile Gallery Image" class="gl-lazy">
+                </a>
+              </li>
+              <li>
+                <a href="images/gallery-img-big-3.jpg" class="gl-lightbox-img">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset=images/business-img-8-ws.jpg>
+                    <img alt="Category Image" srcset=images/business-img-8-xs.jpg>
+                </picture>
+                </a>
+              </li>
+              <li>
+                <a href="images/gallery-img-big-4.jpg" class="gl-lightbox-img">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset=images/gallery-img-4-ws.jpg>
+                    <img alt="Category Image" srcset=images/gallery-img-4-xs.jpg>
+                </picture>
+                </a>
+              </li>
+              <li>
+                <a href="images/gallery-img-big-5.jpg" class="gl-lightbox-img">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset=images/gallery-img-5-ws.jpg>
+                    <img alt="Category Image" srcset=images/gallery-img-5-xs.jpg>
+                </picture>
+                </a>
+              </li>
+              <li>
+                <a href="images/page-header-bg.jpg" class="gl-lightbox-img"></a>
+              </li>
+              <li>
+                <a href="images/gallery-img-big-7.jpg" class="gl-lightbox-img"></a>
+              </li>
+              <li>
+                <a href="images/gallery-img-big-8.jpg" class="gl-lightbox-img"></a>
+              </li>
+            </ul>
+          </div>
+          <!-- END -->
+
+          <!-- ABOUT COMPANY -->
+          <div class="gl-about-company appear fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+            <h3 class="gl-content-title">About Company</h3>
+
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bounds to ensure On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the <br>
+            <br>
+            of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bounds to ensure blame belongs to those who fail in their duty through weakness of will, which is the same</p>
+          </div>
+          <!-- END -->
+
+          <!-- REVIEWS / COMMENT DETAILS -->
+          <div class="gl-review-details appear fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+            <h3 class="gl-content-title">5 Reviews</h3>
+            <!-- Reviews -->
+            <div class="gl-reviews">
+              <!-- USER IMG -->
+              <div class="gl-user-img">
+                <img src="images/author-img.jpg" alt="User" class="gl-lazy">
+              </div>
+              <!-- END -->
+
+              <!-- TEXT -->
+              <div class="gl-review-text">
+                <h3>David Neo</h3>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who beguiled and demoralized by the of pleasure</p>
+                <span class="gl-item-rating"><i class="ion-ios-star"></i>4.5</span>
+              </div>
+              <!-- END -->
+            </div>
+            <!-- END -->
+          </div>
+          <!-- END -->
+
+          <!-- SUBMIT REVIEW -->
+          <div class="gl-review-submission appear fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+            <h3 class="gl-content-title">Submit a Review</h3>
+
+            <form action="#" class="gl-review-submission-form">
+              <fieldset class="gl-form-fields">
+                <div class="gl-input-area">
+                  <input type="text" name="gl-reviewer-name" id="gl-reviewer-name" placeholder="Name">
+                  <input type="email" name="gl-reviewer-email" id="gl-reviewer-email" placeholder="Email">
+                  <textarea name="gl-reviewer-message" id="gl-reviewer-message" cols="30" rows="10" placeholder="Your Comment"></textarea>
+                </div>
+
+                <div class="gl-rating-wrapper">
+                  <h4>Give your Rating</h4>
+
+                  <!-- QUALITY -->
+                  <div class="gl-rating-inputs">
+                      <span class="gl-rating-title">Quality</span>
+                      <div class="gl-rating-wrap">
+                          <span id="gl-quality-rating"></span>
+                      </div>
+                  </div>
+                  <!-- END -->
+
+                  <!-- SERVICE -->
+                  <div class="gl-rating-inputs">
+                      <span class="gl-rating-title">Service</span>
+                      <div class="gl-rating-wrap">
+                          <span id="gl-service-rating"></span>
+                      </div>
+                  </div>
+                  <!-- END -->
+
+                  <!-- RESPONSE -->
+                  <div class="gl-rating-inputs">
+                      <span class="gl-rating-title">Response</span>
+                      <div class="gl-rating-wrap">
+                          <span id="gl-response-rating"></span>
+                      </div>
+                  </div>
+                  <!-- END -->
+
+                  
+                  <!-- <span class="gl-rating-number">4.5</span> -->
+                </div>
+              </fieldset>
+
+              <fieldset class="gl-submit-wrapper">
+                <input type="submit" value="Submit" class="gl-btn">
+              </fieldset>
+            </form>
+          </div>
+          <!-- END -->
+        </div>
+        <!-- GALLERY TAB END -->
+
+        <!-- PROTFOLIO TAB -->
+        <div role="tabpanel" class="tab-pane fade" id="similar-listing">
+             <!-- WRAPPER -->
+              <div class="gl-similar-listing-wrapper">
+
+                <!-- FEATURED ITEMS -->
+                <div class="gl-featured-items col-md-6 col-sm-6 col-xs-12">
+                  <div class="gl-feat-items-img-wrapper">
+                    <img src="images/featured-listing-1.jpg" alt="Featured Listing" class="gl-lazy">
+                  </div>
+
+                  <div class="gl-feat-item-details">
+                    <span class="gl-item-rating">
+                      <i class="ion-android-star-outline"></i>
+                      4.5
+                    </span>
+
+                    <h3>
+                      <a href="#">Office Rent</a>
+                    </h3>
+                    <div class="gl-item-location">
+                      <i class="ion-ios-location-outline"></i>
+                      <span>Road 3, West Portland, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END -->
+
+                <!-- FEATURED ITEMS -->
+                <div class="gl-featured-items col-md-6 col-sm-6 col-xs-12">
+                  <div class="gl-feat-items-img-wrapper">
+                    <img src="images/featured-listing-2.jpg" alt="Featured Listing" class="gl-lazy">
+                  </div>
+
+                  <div class="gl-feat-item-details">
+                    <span class="gl-item-rating">
+                      <i class="ion-android-star-outline"></i>
+                      4.5
+                    </span>
+
+                    <h3>
+                      <a href="#">Lake Heaven</a>
+                    </h3>
+                    <div class="gl-item-location">
+                      <i class="ion-ios-location-outline"></i>
+                      <span>Road 3, West Portland, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END -->
+
+                <!-- FEATURED ITEMS -->
+                <div class="gl-featured-items col-md-6 col-sm-6 col-xs-12">
+                  <div class="gl-feat-items-img-wrapper">
+                    <img src="images/featured-listing-3.jpg" alt="Featured Listing" class="gl-lazy">
+                  </div>
+
+                  <div class="gl-feat-item-details">
+                    <span class="gl-item-rating">
+                      <i class="ion-android-star-outline"></i>
+                      4.5
+                    </span>
+                    <h3>
+                      <a href="#">Cafe Hapus</a>
+                    </h3>
+                    <div class="gl-item-location">
+                      <i class="ion-ios-location-outline"></i>
+                      <span>Road 3, West Portland, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END -->
+
+                <!-- FEATURED ITEMS -->
+                <div class="gl-featured-items col-md-6 col-sm-6 col-xs-12">
+                  <div class="gl-feat-items-img-wrapper">
+                    <img src="images/business-img-1.jpg" alt="Featured Listing" class="gl-lazy">
+                  </div>
+
+                  <div class="gl-feat-item-details">
+                    <span class="gl-item-rating">
+                      <i class="ion-android-star-outline"></i>
+                      4.5
+                    </span>
+                    <h3>
+                      <a href="#">Lake Heaven</a>
+                    </h3>
+                    <div class="gl-item-location">
+                      <i class="ion-ios-location-outline"></i>
+                      <span>Road 3, West Portland, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END -->
+
+                <!-- FEATURED ITEMS -->
+                <div class="gl-featured-items col-md-6 col-sm-6 col-xs-12">
+                  <div class="gl-feat-items-img-wrapper">
+                    <img src="images/business-img-4.jpg" alt="Featured Listing" class="gl-lazy">
+                  </div>
+
+                  <div class="gl-feat-item-details">
+                    <span class="gl-item-rating">
+                      <i class="ion-android-star-outline"></i>
+                      4.5
+                    </span>
+                    <h3>
+                      <a href="#">Office Rent</a>
+                    </h3>
+                    <div class="gl-item-location">
+                      <i class="ion-ios-location-outline"></i>
+                      <span>Road 3, West Portland, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END -->
+
+                <!-- FEATURED ITEMS -->
+                <div class="gl-featured-items col-md-6 col-sm-6 col-xs-12">
+                  <div class="gl-feat-items-img-wrapper">
+                    <img src="images/business-img-10.jpg" alt="Featured Listing" class="gl-lazy">
+                  </div>
+
+                  <div class="gl-feat-item-details">
+                    <span class="gl-item-rating">
+                      <i class="ion-android-star-outline"></i>
+                      4.5
+                    </span>
+                    <h3>
+                      <a href="#">Cafe Hapus</a>
+                    </h3>
+                    <div class="gl-item-location">
+                      <i class="ion-ios-location-outline"></i>
+                      <span>Road 3, West Portland, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END -->
+
+                <!-- FEATURED ITEMS -->
+                <div class="gl-featured-items col-md-6 col-sm-6 col-xs-12">
+                  <div class="gl-feat-items-img-wrapper">
+                    <img src="images/business-img-3.jpg" alt="Featured Listing" class="gl-lazy">
+                  </div>
+
+                  <div class="gl-feat-item-details">
+                    <span class="gl-item-rating">
+                      <i class="ion-android-star-outline"></i>
+                      4.5
+                    </span>
+                    <h3>
+                      <a href="#">Lake Heaven</a>
+                    </h3>
+                    <div class="gl-item-location">
+                      <i class="ion-ios-location-outline"></i>
+                      <span>Road 3, West Portland, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END -->
+
+                <!-- FEATURED ITEMS -->
+                <div class="gl-featured-items col-md-6 col-sm-6 col-xs-12">
+                  <div class="gl-feat-items-img-wrapper">
+                    <img src="images/business-img-7.jpg" alt="Featured Listing" class="gl-lazy">
+                  </div>
+
+                  <div class="gl-feat-item-details">
+                    <span class="gl-item-rating">
+                      <i class="ion-android-star-outline"></i>
+                      4.5
+                    </span>
+                    <h3>
+                      <a href="#">Office Rent</a>
+                    </h3>
+                    <div class="gl-item-location">
+                      <i class="ion-ios-location-outline"></i>
+                      <span>Road 3, West Portland, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END -->
+
+              </div>
+              <!-- END -->
+        </div>
+        <!-- PROTFOLIO TAB END -->
+      </div>
+      <!-- PAGE CONTENT DETAILS END -->
+
+      <!-- SIDEBAR -->
+      <div class="gl-sidebar gl-page-sidebar col-md-4 col-sm-4 col-xs-12">
+        <!-- SIDEBAR WIDGET -->
+        <div class="gl-sidebar-widget gl-author-widget">
+          <div class="gl-author-img-wrapper">
+             <img src="images/user-img.png" alt="Author" class="gl-lazy">
+          </div>
+
+          <div class="gl-author-details">
+            <h3>Dave Hussy</h3>
+            <p>On the other hand, we denounce with righteo On the other hand, we denounce</p>
+
+            <ul class="gl-author-social-links">
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-tumblr"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- END -->
+
+        <!-- SIDEBAR WIDGET -->
+        <div class="gl-sidebar-widget gl-sidebar-map-widget">
+          <div id="gl-map-small" class="gl-map-small"></div>
+        </div>
+        <!-- END -->
+
+        <!-- SIDEBAR WIDGET -->
+        <div class="gl-sidebar-widget gl-sidebar-contact-form">
+          <h3 class="gl-sidebar-title">Quick Contact</h3>
+
+          <form action="#">
+            <input type="text" name="gl-name" id="gl-name" placeholder="Name">
+            <input type="email" name="gl-email" id="gl-email" placeholder="Email">
+            <textarea name="gl-message" id="gl-message" cols="30" rows="4" placeholder="Message"></textarea>
+            <input type="submit" value="Send" class="gl-btn">
+          </form>
+        </div>
+        <!-- END -->
+
+
+      </div>
+      <!-- SIDEBAR END -->
+    </div>
+  </div>
+</section>
+<!-- PAGE CONTETNT END -->
+
+
+
+
+<!-- FOOTER -->
+<footer>
+  <!-- FOOTER TOP -->
+  <div class="gl-footer-top-wrapper">
+    <div class="container">
+      <div class="row">
+        <!-- FOOTER WIDGET -->
+        <div class="gl-footer-widget gl-footer-logo gl-footer-fixed-widget">
+          <a href="#">
+            <img src="images/logo-footer.png" alt="Glimpse">
+          </a>
+        </div>
+        <!-- END -->
+
+        <!-- FOOTER WIDGET -->
+        <div class="gl-footer-widget gl-contact-info">
+          <h3 class="gl-footer-widget-title">Contact info</h3>
+
+          <div class="gl-footer-widget-content">
+            <ul>
+              <li><i class="fa fa-map-marker"></i>Road 3, West side lane Texas,  USA</li>
+              <li><i class="fa fa-phone"></i>0632 0152 001</li>
+              <li><i class="fa fa-envelope-o"></i>mail@gmail.com</li>
+              <li><i class="fa fa-globe"></i>www.glimpse.com</li>
+            </ul>
+          </div>
+        </div>
+        <!-- END -->
+
+        <!-- FOOTER WIDGET -->
+        <div class="gl-footer-widget gl-useful-links">
+          <h3 class="gl-footer-widget-title">Company</h3>
+
+          <div class="gl-footer-widget-content">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Career &amp; Goal</a></li>
+              <li><a href="#">Company Profile</a></li>
+              <li><a href="#">Process</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- END -->
+
+        <!-- FOOTER WIDGET -->
+        <div class="gl-footer-widget gl-subscribe-widget">
+          <h3 class="gl-footer-widget-title">Subscribe</h3>
+
+          <div class="gl-footer-widget-content">
+          <p>Checkout and enjoy the biggest eco</p>
+
+          <form action="#">
+            <input type="email" name="gl-subscription" id="gl-subscription" placeholder="Your email">
+            <button type="submit" class="gl-btn">Submit</button>
+          </form>
+          </div>
+        </div>
+        <!-- END -->
+      </div>
+    </div>
+  </div>
+  <!-- END -->
+
+  <!-- FOOTER BOTTOM -->
+  <div class="gl-footer-bottom-wrapper">
+    <div class="container">
+      <div class="row">
+        <!-- COPYRIGHT INFO -->
+        <div class="gl-copyright-info-wrapper">
+          <p>Copyright &copy; 2016 Glimpse. All rights reserved</p>
+        </div>
+        <!-- COPYRIGHT INFO -->
+
+        <div class="gl-social-info-wrapper">
+          <ul>
+            <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-behance"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-vimeo"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END -->
+</footer>
+<!-- FOOTER END -->
+
+
+
+
+<!-- SHARE MODAL -->
+<div class="remodal-bg">
+    <div class="gl-share-modal-wrapper" data-remodal-id="modal-share">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        
+        <div class="gl-share-opt-wrapper">
+            <ul>
+                <li class="gl-fb-share">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+
+                <li class="gl-twitter-share">
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+
+                <li class="gl-gplus-share">
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                        <span>Google+</span>
+                    </a>
+                </li>
+
+                <li class="gl-linkedin-share">
+                    <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                        <span>Linkedin</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- SHARE MODAL END -->
+
+<script src="../js/jquery.min.js"></script>
+
+
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBF0FPDHlurGkDKua7PfZjpD2fr2rQsRw0&libraries=places"></script>
+
+<script src="../js/plugins.js"></script>
+<script src="../js/scripts.js"></script>
+
+<script src="../js/infobubble-richmarker.js"></script>
+<script src="../js/google-map-init.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
