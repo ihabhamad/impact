@@ -204,6 +204,11 @@
                 <i class="fa fa-bars text-green"></i> <span>Site Menus</span> <small class="label pull-right bg-green">{{app('admin_menus_count')['menu']}}</small>
               </a>
             </li>
+            <li>
+              <a href="{{ route('settings') }}">
+                <i class="fa fa-bars text-green"></i> <span>Site Settings</span>
+              </a>
+            </li>
           </ul>
         </section>
         <!-- /.sidebar -->

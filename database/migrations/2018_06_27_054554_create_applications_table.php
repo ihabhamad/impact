@@ -25,6 +25,10 @@ class CreateApplicationsTable extends Migration
     }
 
     /**
+     * why there are two versions? of the Applications table ?
+     *  if you are in the office , then visit me if you can
+     * im here until 7pm o k  but let me tell you someting
+     * it make the first latter of the table name capital so thats way it wont be found
      * Reverse the migrations.
      *
      * @return void
