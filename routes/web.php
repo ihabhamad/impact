@@ -26,7 +26,7 @@ Route::get('/euser', 'Front\HomeController@EditUser');
 Route::post('/contact_us','Front\PublicController@contact_us_mail')->name('contactus.mail');
 
 Route::get('new' , 'Front\PublicController@_new')->name('theme.view');
-Route::get('new/impact' , 'Front\PublicController@impact')->name('theme.impact');
+Route::get('new/impact' , 'Front\HomeController@impact')->name('theme.impact');
 
 Auth::routes();
 

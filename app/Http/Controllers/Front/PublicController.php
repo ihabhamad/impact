@@ -30,7 +30,6 @@ class PublicController extends Controller
     }
 
      public function _new() { return view('themes.one.pages.home') ; }
-     public function impact() { return view('themes.one.pages.impact') ; }
     public function page($slug)
     {
         $post = Post::where('slug',$slug)->firstOrFail();

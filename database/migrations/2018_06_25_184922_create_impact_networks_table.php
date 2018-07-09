@@ -17,6 +17,8 @@ class CreateImpactNetworksTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('Full_Name');
+            $table->string('about')->nullable();
+            $table->string('personal_image')->nullable();
             $table->string('Current_Position');
             $table->string('Currently_based_on');
             $table->timestamps();

@@ -47,7 +47,8 @@ class HomeController extends Controller
     }
     public function impact(){
         $impacts = impactNetwork::with('experiances','guidances')->get();
-        return view('frontend.pages.impact',compact('impacts')) ;
+        //return view('frontend.pages.impact',compact('impacts')) ;
+        return view('themes.one.pages.impact',compact('impacts')) ;
     }
     public function search($text,$order = 'asc'){
 
@@ -73,7 +74,7 @@ class HomeController extends Controller
         foreach ($Admins as $admin){
             Notification::send($admin, new UserConnectImpactPerson($data));
         }
-        return redirect()->back()->with('message','Admin well be connect to you for more information.');
+        return redirect()->back()->with('message','you trying to connect to '.$request->impact_name.' , Notification well be sent to Admin and  well be connect to you soon for more information.');
     }
     public function ApplyForApplication(Request $request){
         $data['name'] = auth()->user()->name;

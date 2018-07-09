@@ -36,8 +36,10 @@ $factory->define(App\Guidance::class, function (Faker $faker) {
 $factory->define(App\ImpactNetwork::class, function (Faker $faker) {
     return [
         'Full_Name' => $faker->name,
-        'Current_Position' => $faker->state.','.$faker->city,
-        'Currently_based_on' => $faker->city.','.$faker->streetName,
+        'Current_Position' => $faker->country.','.$faker->city,
+        'about' => $faker->word($nbSentences = 3, $variableNbSentences = true),
+        'personal_image' => $faker->image(public_path('/uploads/impacts')  , 800 , 600 , 'business' , []),
+        'Currently_based_on' => $faker->country.','.$faker->city,
     ];
 });
 $factory->define(App\ImpactNetworksExperiance::class, function (Faker $faker) {
@@ -57,7 +59,7 @@ $factory->define(App\Application::class, function (Faker $faker) {
         'title' => $faker->word,
         'slug' => $faker->word,
         'content' => $faker->paragraph($nbSentences = 3, $variableNbSentences = true),
-        'image' => $faker->image(public_path('/uploads/applications/')  , 800 , 600 , [] , []),
+        'image' => $faker->image(public_path('/uploads/applications')  , 800 , 600 , 'business' , []),
     ];
 });
 $factory->define(App\Post::class, function (Faker $faker) {
@@ -66,7 +68,7 @@ $factory->define(App\Post::class, function (Faker $faker) {
         'slug' => $faker->word,
         'post_type' => $faker->randomElement($array = array ('header', 'our', 'our', 'our', 'our', 'our', 'event', 'event', 'event')),
         'content' => $faker->paragraph($nbSentences = 3, $variableNbSentences = true),
-        'image' => $faker->image(public_path('/uploads/posts/')  , 800 , 600 , [] , [])
+        'image' => $faker->image(public_path('/uploads/posts')  , 800 , 600 , 'business' , [])
     ];
 });
 $factory->define(App\Extramenu::class, function (Faker $faker) {
